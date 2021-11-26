@@ -1,0 +1,1337 @@
+@import url('https://fonts.googleapis.com/css2?family=Quicksand:wght@400;700&display=swap');
+@import url('https://fonts.googleapis.com/icon?family=Material+Icons');
+html,
+body {
+    font-family: 'Quicksand', sans-serif;
+    margin: 0;
+    padding: 0;
+}
+
+
+/* Footer */
+
+.footerForm {
+    font-size: 16px;
+    text-align: center;
+    color: white;
+    background-color: #2CB3FF;
+    width: 100%;
+    height: 50px;
+    bottom: 0;
+    left: 0;
+    position: fixed;
+}
+
+
+/* Footer Scroll */
+
+.footerContainer {
+    position: relative;
+}
+
+.footerContainer .footerInformation {
+    background-color: white;
+    display: flex;
+    flex-direction: row;
+    padding: 30px;
+    justify-content: center;
+}
+
+.footerContainer .footerInformation .baperinInformation {
+    width: 500px;
+}
+
+.footerContainer .footerInformation .baperinInformation .headFooterInformation,
+.footerContainer .footerInformation .baperinCustomerService .headFooterInformation,
+.footerContainer .footerInformation .baperinService .headFooterInformation {
+    color: #727272;
+    font-size: 22px;
+}
+
+.footerContainer .footerInformation .baperinInformation .contentFooterInformation,
+.footerContainer .footerInformation .baperinCustomerService .contentFooterInformation,
+.footerContainer .footerInformation .baperinService .contentFooterInformation {
+    color: #9A9A9A;
+    font-size: 17px;
+}
+
+.footerContainer .footerInformation .baperinCustomerService,
+.footerContainer .footerInformation .baperinService {
+    width: 200px;
+    margin-left: 50px;
+}
+
+.footerContainer .footerMain {
+    padding-top: 1px;
+    left: 0;
+    bottom: 0;
+    width: 100%;
+    height: 50px;
+    background: #2CB3FF;
+    color: white;
+    text-align: center;
+}
+
+
+/* Error Style */
+
+.errorStyle {
+    color: #FF0000;
+}
+
+.rememberMe {
+    color: #444444;
+    font-size: 17px;
+    margin: 0px;
+    font-weight: normal;
+}
+
+.headLogin,
+.headChangePassword,
+.headChooseSchedule {
+    position: center;
+    text-align: center;
+    margin-top: 40px;
+    margin-bottom: 20px;
+    color: #9A9A9A;
+}
+
+.headForgotPassword {
+    position: center;
+    justify-content: center;
+    text-align: center;
+    margin-top: 75px;
+    margin-bottom: 10px;
+    color: #9A9A9A
+}
+
+.orderDetailTitle {
+    padding-top: 20px;
+    padding-right: 90px;
+    text-align: left;
+    color: #727272;
+    font-weight: bold;
+    font-size: 17px;
+}
+
+.orderDetailContent {
+    text-align: right;
+    color: #727272;
+    font-size: 17px;
+}
+
+.orderDetailCallCenter {
+    color: #727272;
+    font-size: 17px;
+}
+
+.headPasswordVerification {
+    text-align: center;
+    font-size: 13px;
+    margin: 30px;
+    color: #9A9A9A;
+}
+
+.headOrderDetail {
+    text-align: center;
+    font-size: 13px;
+    margin-right: 150px;
+    margin-left: 150px;
+    color: #005889;
+}
+
+.headRegister {
+    position: center;
+    text-align: center;
+    margin-top: 5px;
+    color: #9A9A9A;
+}
+
+.headHighlight,
+.orderDetailHighLight {
+    color: #007FC7;
+    font-weight: bold;
+}
+
+
+/* ---Form--- */
+
+.forgotPasswordLink {
+    margin-top: 5px;
+    padding-left: 350px;
+    font-weight: bold;
+    font-size: 18px;
+    color: #007FC7;
+    text-decoration: none;
+}
+
+.backToChooseSchedule,
+.backToHome {
+    font-size: 17px;
+    color: #727272;
+    text-decoration: none;
+    margin-top: 3px;
+    margin-bottom: 10px;
+}
+
+.registerLink,
+.back-login {
+    font-weight: bold;
+    color: #007FC7;
+    text-decoration: none;
+}
+
+.loginContainer,
+.changePasswordContainer,
+.passwordVerification,
+.login,
+.forgotPassword,
+.forgotPasswordContainer,
+.changePassword,
+.orderDetailContainer,
+.orderDetail,
+.alertPassChangeSuccessContainer,
+.alertPassChangeSuccess,
+.chooseScheduleContainer,
+.chooseSchedule {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.registerContainer {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin: 0px;
+}
+
+.wrapper {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 17px;
+}
+
+.wrapper .passwordVerificationContainer {
+    width: 610px;
+    height: 420px;
+    border-radius: 20px;
+    margin: 23px;
+    background: #F8F9FA;
+    padding: 30px;
+    flex-grow: 1;
+    height: fit-content;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+    border-radius: 20px;
+}
+
+.wrapper .orderDetailContainer {
+    width: 610px;
+    height: 420px;
+    border-radius: 20px;
+    margin-top: 20px;
+    margin-bottom: 5px;
+    background: #F8F9FA;
+    padding-top: 20px;
+    padding-bottom: 20px;
+    flex-grow: 1;
+    height: fit-content;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+    border-radius: 20px;
+}
+
+.bodyPasswordVerification,
+.bodyOrderDetail,
+.bodyChooseSchedule,
+.Layout {
+    background-color: #D9F1FF;
+}
+
+.form-group,
+.form-password {
+    width: 60%;
+    margin-top: 3px;
+    margin-bottom: 13px;
+    display: flex;
+    align-items: center;
+    background: #F8F8F8;
+    border: 2px solid #ededed;
+    border-radius: 8px;
+}
+
+.form-group input,
+.form-password input {
+    font-family: Quicksand;
+    font-weight: bolder;
+    color: #727272;
+    padding: 16px;
+    width: 750px;
+    height: 15px;
+    border: 0;
+    border-radius: 8px;
+    background: #F8F8F8;
+    outline: none;
+    font-size: 18px;
+}
+
+.form-group:focus-within,
+.form-password:focus-within {
+    outline: none;
+    box-shadow: 1px 1px 1px 1px #d1d1d1;
+}
+
+input[type="password"]::placeholder,
+input[type="text"]::placeholder,
+input[type="email"]::placeholder {
+    color: #d1d1d1;
+    font-weight: bold;
+    font-size: 16px;
+}
+
+i {
+    margin: 0 10px;
+    color: #007FC7;
+    cursor: pointer;
+}
+
+input[type="submit"] {
+    font-family: Quicksand;
+    background: #F8F8F8;
+    border: none;
+    justify-content: center;
+    border-radius: 8px;
+    padding: 16px;
+    margin-bottom: 8px;
+    font-size: 16px;
+    width: 500px;
+    height: 50px;
+    left: 470px;
+    top: 487px;
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+}
+
+.login .btnMasuk,
+.changePasswordContainer .btnChangePassword {
+    margin-top: 5px;
+    border-radius: 8px;
+    padding: 12px 24px;
+    color: #F8F8F8;
+    font-weight: bold;
+    background-color: #007FC7;
+    font-size: 16px;
+    align-self: center;
+    cursor: pointer;
+    transition: all 0.3s ease 0s;
+}
+
+.forgotPasswordContainer .btnSendEmailVerification {
+    margin-top: 15px;
+    border-radius: 8px;
+    padding: 12px 24px;
+    color: #F8F8F8;
+    font-weight: bold;
+    background-color: #007FC7;
+    font-size: 16px;
+    align-self: center;
+    cursor: pointer;
+    transition: all 0.3s ease 0s;
+}
+
+.passwordVerificationContainer .btnNext,
+.orderDetailContainer .btnOkay,
+.alertPassChangeSuccessContainer .btnOkay,
+.chooseScheduleContainer .btnApply {
+    width: 215px;
+    height: 50px;
+    padding: 12px 24px;
+    border-radius: 8px;
+    color: #F8F8F8;
+    font-weight: bold;
+    background-color: #007FC7;
+    font-size: 16px;
+    cursor: pointer;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 20px;
+    transition: all 0.3s ease 0s;
+}
+
+.registerContainer .btnRegister {
+    border-radius: 8px;
+    margin: 0px;
+    padding: 12px 24px;
+    color: #F8F8F8;
+    font-weight: bold;
+    background-color: #007FC7;
+    font-size: 16px;
+    align-self: center;
+    transition: all 0.3s ease 0s;
+    cursor: pointer;
+}
+
+.btnMasuk:hover,
+.btnChangePassword:hover,
+.btnRegister:hover,
+.btnNextt:hover,
+.btnSendEmailVerification:hover,
+.btnOkay:hover,
+.btnApply:hover {
+    color: #BFE8FF;
+}
+
+.forgotDetail {
+    margin-top: 0px;
+    margin-bottom: 30px;
+    font-style: normal;
+    font-size: 20px;
+    text-align: center;
+    color: #9A9A9A;
+}
+
+
+/* ---Form End--- */
+
+
+/* Navbar */
+
+.baperinNavbar {
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    height: 70px;
+    background-color: #2CB3FF;
+    color: white;
+}
+
+.baperinLogo {
+    margin-right: auto;
+}
+
+.baperinNavLinks {
+    margin: 0px;
+    padding: 5px;
+    background: none;
+    display: block;
+    justify-content: flex-end;
+}
+
+.baperinNavLinks li {
+    list-style: none;
+    display: inline-block;
+}
+
+.baperinNavLinks li a {
+    transition: all 0.3s ease 0s;
+    display: block;
+    text-decoration: none;
+    padding: 20px;
+    color: #FFFFFF;
+    font-weight: bold;
+    font-size: 17px;
+    text-align: center;
+}
+
+.baperinNavLinks li a:hover,
+.baperinDropdown:hover .baperinDropdownButton {
+    background: #007FC7;
+    border-radius: 8px;
+}
+
+.baperinDropdown {
+    float: right;
+    overflow: hidden;
+    margin: 0px;
+    background: none;
+    display: block;
+    justify-content: flex-end;
+}
+
+.baperinDropdown .baperinDropdownButton {
+    transition: all 0.3s ease 0s;
+    display: block;
+    text-decoration: none;
+    padding: 20px;
+    color: #FFFFFF;
+    font-weight: bold;
+    margin-bottom: 3px;
+    font-size: 17px;
+}
+
+.baperinDropdownContent {
+    display: none;
+    margin: 0;
+    position: absolute;
+    background-color: none;
+    min-width: 160px;
+    min-height: 70px;
+    z-index: 1;
+}
+
+.baperinDropdownContent a {
+    float: none;
+    color: white;
+    font-weight: bold;
+    background-color: #2CB3FF;
+    padding: 12px 16px;
+    text-decoration: none;
+    display: block;
+    text-align: left;
+}
+
+.baperinDropdownContent a:hover {
+    background-color: #007FC7;
+    color: white;
+}
+
+.baperinDropdown:hover .baperinDropdownContent {
+    display: block;
+}
+
+.btnLogin {
+    font-family: Quicksand;
+    font-weight: bold;
+    font-size: 17px;
+    line-height: 25px;
+    color: #007FC7;
+    justify-content: center;
+    width: 82px;
+    height: 40px;
+    background-color: #BFE8FF;
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+    border-radius: 5px;
+    border: none;
+    cursor: pointer;
+    transition: all 0.3s ease 0s;
+    margin-right: 20px;
+    margin-left: 15px;
+}
+
+
+/*home*/
+
+.baperinHomeVector {
+    margin-top: 55px;
+    width: 150px;
+    height: 150px;
+}
+
+.baperinHomeFirstRow,
+.baperinHomeSecondRow {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.baperinHomeFirstRow .firstRowItem {
+    width: 450px;
+    text-align: center;
+    font-family: Quicksand;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 22px;
+    color: #007FC7;
+}
+
+.baperinHomeHighlight {
+    color: #005889;
+}
+
+.baperinHomeFirstRow .secondRowItem {
+    width: 500px;
+    font-family: Quicksand;
+    font-style: normal;
+    font-size: 17px;
+    text-align: center;
+    margin-top: 0px;
+    color: #007FC7;
+}
+
+.baperinHomeFirstRow .btnSignin {
+    width: 168px;
+    height: 50px;
+    margin-top: 15px;
+    background-color: #007FC7;
+    color: #FFFFFF;
+    border-radius: 8px;
+    font-style: normal;
+    font-size: 16px;
+    line-height: 24px;
+    text-align: center;
+    padding: 13px 17px;
+    cursor: pointer;
+    transition: all 0.3s ease 0s;
+}
+
+.baperinHomeFirstRow .btnSignin:hover,
+.baperinHomeSecondRow .featureItemContainer .featureItem .btnViewMore:hover {
+    color: #BFE8FF;
+}
+
+.baperinHomeSecondRow .firstRowItem {
+    margin-top: 50px;
+    margin-bottom: 0px;
+    text-align: center;
+    font-family: Quicksand;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 22px;
+    color: #007FC7;
+}
+
+.baperinHomeSecondRow .featureItemContainer {
+    display: flex;
+    justify-content: center;
+    flex-flow: wrap;
+}
+
+.baperinHomeSecondRow .featureItemContainer .featureItem {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 250px;
+    height: 450px;
+    margin: 10px;
+    margin-top: 30px;
+    margin-left: 30px;
+    margin-right: 30px;
+    background: #FFFFFF;
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+    border-radius: 20px;
+}
+
+.baperinHomeSecondRow .featureItemContainer .featureItem .featureItemVector {
+    width: 250px;
+    height: 180px;
+    border-radius: 20px 20px 0px 0px;
+}
+
+.baperinHomeSecondRow .featureItemContainer .featureItem .featureItemHead {
+    margin: 0px;
+    margin-top: 5px;
+    font-family: Quicksand;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 20px;
+    text-align: center;
+    color: #727272;
+}
+
+.baperinHomeSecondRow .featureItemContainer .featureItemInformation {
+    width: 200px;
+    margin: 0px;
+    margin-top: 20px;
+    margin-bottom: 10px;
+    padding: 10px;
+    font-family: Quicksand;
+    font-style: normal;
+    font-size: 15px;
+    color: #9A9A9A;
+}
+
+.baperinHomeSecondRow .featureItemContainer .featureItem .btnViewMore {
+    font-family: Quicksand;
+    font-style: normal;
+    font-size: 16px;
+    margin-top: 20px;
+    width: 190px;
+    height: 47px;
+    background-color: #007FC7;
+    border-radius: 8px;
+    padding: 13px 17px;
+    text-align: center;
+    color: #FFFFFF;
+    cursor: pointer;
+    transition: all 0.3s ease 0s;
+}
+
+
+/* Counseling */
+
+.baperinCounselingFirstRow,
+.baperinCounselingSecondRow,
+.baperinCounselingThirdRow {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.baperinCounselingVector {
+    margin-top: 30px;
+    width: 500px;
+    height: 270px;
+}
+
+.baperinCounselingFirstRow .counselingFirstRowItem {
+    font-family: Quicksand;
+    width: 500px;
+    text-align: center;
+    font-size: 22px;
+    color: #727272;
+    margin-top: 30px;
+}
+
+.baperinCounselingHightLight {
+    color: #007FC7;
+    font-weight: bold;
+}
+
+.baperinCounselingFirstRow .btnOrderNow {
+    width: 168px;
+    height: 50px;
+    margin-top: 2px;
+    background-color: #007FC7;
+    color: #FFFFFF;
+    border-radius: 8px;
+    font-style: normal;
+    font-size: 16px;
+    line-height: 24px;
+    text-align: center;
+    padding: 13px 17px;
+    cursor: pointer;
+    transition: all 0.3s ease 0s;
+}
+
+.baperinCounselingFirstRow .btnOrderNow:hover,
+.baperinCounselingThirdRow .featureCounselingItemContainer .featureItem .btnApplySchedule:hover {
+    color: #BFE8FF;
+}
+
+.baperinCounselingSecondRow .counselingProofContainer {
+    display: flex;
+    padding: 30px;
+    flex-direction: row;
+}
+
+.baperinCounselingSecondRow .counselingProofContainer .counselingProofItem {
+    align-items: center;
+    margin-bottom: 30px;
+    margin-top: 50px;
+    margin-left: 30px;
+    margin-right: 30px;
+}
+
+.baperinCounselingSecondRow .counselingProofContainer .counselingProofItem .counselingProofItemVector {
+    width: 470px;
+    height: 400px;
+    border-radius: 20px 20px 20px 20px;
+}
+
+.baperinCounselingSecondRow .counselingProofContainer .counselingProofItem .counselingProofItemHead {
+    font-size: 35px;
+    font-weight: bold;
+    color: #005889;
+}
+
+.baperinCounselingSecondRow .counselingProofContainer .counselingProofItem .counselingProofItemList {
+    width: 500px;
+    font-size: 20px;
+    color: #005889;
+}
+
+.baperinCounselingThirdRow .counselingFirstRowItem {
+    margin-top: 40px;
+    margin-bottom: 0px;
+    text-align: center;
+    font-family: Quicksand;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 22px;
+    color: #007FC7;
+}
+
+.baperinCounselingThirdRow .featureCounselingItemContainer {
+    display: flex;
+    justify-content: center;
+    flex-flow: wrap;
+}
+
+.baperinCounselingThirdRow .featureCounselingItemContainer .featureItem {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 250px;
+    height: 470px;
+    margin: 10px;
+    margin-top: 30px;
+    margin-left: 30px;
+    margin-right: 30px;
+    background: #FFFFFF;
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+    border-radius: 20px;
+}
+
+.baperinCounselingThirdRow .featureCounselingItemContainer .featureItem .featureItemVector {
+    width: 250px;
+    height: 180px;
+    border-radius: 20px 20px 0px 0px;
+}
+
+.baperinCounselingThirdRow .featureCounselingItemContainer .featureItem .featureItemHead {
+    margin: 0px;
+    margin-top: 13px;
+    font-family: Quicksand;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 20px;
+    text-align: center;
+    color: #727272;
+}
+
+.baperinCounselingThirdRow .featureCounselingItemContainer .featureItem .featureItemInformation {
+    width: 200px;
+    height: 200px;
+    margin: 0px;
+    margin-top: 2px;
+    text-align: center;
+    padding: 10px;
+    font-family: Quicksand;
+    font-style: normal;
+    font-size: 15px;
+    color: #9A9A9A;
+}
+
+.baperinCounselingThirdRow .featureCounselingItemContainer .featureItem .btnApplySchedule {
+    font-family: Quicksand;
+    font-style: normal;
+    font-size: 16px;
+    width: 190px;
+    height: 47px;
+    background-color: #007FC7;
+    border-radius: 8px;
+    padding: 13px 17px;
+    text-align: center;
+    color: #FFFFFF;
+    cursor: pointer;
+    margin-bottom: 20px;
+    transition: all 0.3s ease 0s;
+}
+
+.baperinCounselingThirdRow .featureCounselingItemContainer .featureItem .featureItemTimeInformation {
+    width: 80px;
+    padding: 3px;
+    font-family: Quicksand;
+    font-size: 13px;
+    font-weight: bold;
+    text-align: center;
+    margin: 0px;
+    border-radius: 8px;
+    margin-top: 10px;
+    background-color: #005889;
+    color: white;
+}
+
+.baperinMentoringThirdRow .featureMentoringItemContainer .featureItem .btnApplySchedule:hover {
+    color: #BFE8FF;
+}
+
+
+/* Mentoring */
+
+.baperinMentoringFirstRow,
+.baperinMentoringSecondRow,
+.baperinMentoringThirdRow {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.baperinMentoringFirstRow .mentoringProofContainer {
+    display: flex;
+    padding: 30px;
+    flex-direction: row;
+}
+
+.baperinMentoringFirstRow .mentoringProofContainer .mentoringProofItem {
+    align-items: center;
+    margin-bottom: 30px;
+    margin-top: 50px;
+    margin-left: 30px;
+    margin-right: 30px;
+}
+
+.baperinMentoringFirstRow .mentoringProofContainer .mentoringProofItem .mentoringProofItemVector {
+    width: 330px;
+    height: 330px;
+    border-radius: 20px 20px 20px 20px;
+}
+
+.baperinMentoringFirstRow .mentoringProofContainer .mentoringProofItem .mentoringProofItemHead {
+    font-size: 35px;
+    font-weight: bold;
+    color: #005889;
+}
+
+.baperinMentoringFirstRow .mentoringProofContainer .mentoringProofItem .mentoringProofItemList {
+    width: 500px;
+    font-size: 20px;
+    color: #005889;
+}
+
+.baperinMentoringSecondRow .mentoringFlowContainer {
+    width: 215px;
+    height: 220px;
+    display: flex;
+    flex-direction: column;
+    padding-left: 40px;
+    padding-right: 40px;
+    padding-top: 40px;
+    padding-bottom: 50px;
+    background-color: #005889;
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+    border-radius: 20px;
+}
+
+.baperinMentoringSecondRow .mentoringFlowContainer .mentoringFlowItem {
+    align-items: center;
+}
+
+.baperinMentoringSecondRow .mentoringFlowContainer .mentoringFlowItem .mentoringFlowItemHead {
+    font-weight: bold;
+    font-size: 25px;
+    color: white;
+    text-align: center;
+}
+
+.baperinMentoringSecondRow .mentoringFlowContainer .mentoringFlowItem .mentoringFlowItemList {
+    font-size: 18px;
+    color: white;
+}
+
+.baperinMentoringThirdRow .mentoringFirstRowItem {
+    margin-top: 70px;
+    margin-bottom: 0px;
+    text-align: center;
+    font-family: Quicksand;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 22px;
+    color: #007FC7;
+}
+
+.baperinMentoringThirdRow .featureMentoringItemContainer {
+    display: flex;
+    justify-content: center;
+    flex-flow: wrap;
+}
+
+.baperinMentoringThirdRow .featureMentoringItemContainer .featureItem {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 250px;
+    height: 470px;
+    margin: 10px;
+    margin-top: 30px;
+    margin-left: 30px;
+    margin-right: 30px;
+    background: #FFFFFF;
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+    border-radius: 20px;
+}
+
+.baperinMentoringThirdRow .featureMentoringItemContainer .featureItem .featureItemVector {
+    width: 250px;
+    height: 180px;
+    border-radius: 20px 20px 0px 0px;
+}
+
+.baperinMentoringThirdRow .featureMentoringItemContainer .featureItem .featureItemHead {
+    margin: 0px;
+    margin-top: 13px;
+    font-family: Quicksand;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 20px;
+    text-align: center;
+    color: #727272;
+}
+
+.baperinMentoringThirdRow .featureMentoringItemContainer .featureItem .featureItemInformation {
+    width: 200px;
+    height: 200px;
+    margin: 0px;
+    margin-top: 2px;
+    text-align: center;
+    padding: 10px;
+    font-family: Quicksand;
+    font-style: normal;
+    font-size: 15px;
+    color: #9A9A9A;
+}
+
+.baperinMentoringThirdRow .featureMentoringItemContainer .featureItem .btnApplySchedule {
+    font-family: Quicksand;
+    font-style: normal;
+    font-size: 16px;
+    width: 190px;
+    height: 47px;
+    background-color: #007FC7;
+    border-radius: 8px;
+    padding: 13px 17px;
+    text-align: center;
+    color: #FFFFFF;
+    cursor: pointer;
+    margin-bottom: 20px;
+    transition: all 0.3s ease 0s;
+}
+
+.baperinMentoringThirdRow .featureMentoringItemContainer .featureItem .featureItemTimeInformation {
+    width: 80px;
+    padding: 3px;
+    font-family: Quicksand;
+    font-size: 13px;
+    font-weight: bold;
+    text-align: center;
+    margin: 0px;
+    border-radius: 8px;
+    margin-top: 10px;
+    background-color: #005889;
+    color: white;
+}
+
+.itemSelectedChooseSchedule {
+    font-family: Quicksand;
+    line-height: 24px;
+    display: flex;
+    align-items: center;
+    padding-left: 15px;
+    opacity: 0.5;
+    width: 750px;
+    height: 45px;
+    color: black;
+    outline: none;
+    font-weight: bold;
+    font-size: 16px;
+    font-style: normal;
+    background: #F8F8F8;
+    box-shadow: 0px 0px 4px rgba(0, 0, 0, 0.25);
+    border: 0;
+    border-radius: 8px;
+}
+
+
+/* Profile */
+
+.profilePsychologistRow,
+.profilePsychologistScheduleRow {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.profilePsychologistRow .profilePsychologistContainer {
+    display: flex;
+    justify-content: center;
+}
+
+.profilePsychologistRow .profilePsychologistContainer .profilePsychologistItem {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 650px;
+    height: 400px;
+    padding: 70px;
+    margin: 30px;
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+    border-radius: 20px;
+}
+
+.profilePsychologistRow .profilePsychologistContainer .profilePsychologistItem .profilePsychologistItemVector {
+    width: 100px;
+    height: 100px;
+    border-radius: 50%;
+}
+
+.profilePsychologistRow .profilePsychologistContainer .profilePsychologistItem .profilePsychologistItemHead {
+    color: #005889;
+    margin: 15px;
+    font-size: 35px;
+    font-weight: bold;
+}
+
+.profilePsychologistRow .profilePsychologistContainer .profilePsychologistItem .profilePsychologistItemEmail {
+    color: #007FC7;
+    font-size: 18px;
+    font-weight: bold;
+    margin-top: 0px;
+}
+
+.profilePsychologistRow .profilePsychologistContainer .profilePsychologistItem .profilePsychologistItemGender {
+    color: #007FC7;
+    font-size: 16px;
+    margin-top: 0px;
+}
+
+.profilePsychologistRow .profilePsychologistContainer .profilePsychologistItem .profilePsychologistItemInformation {
+    width: 650px;
+    text-align: center;
+    color: #007FC7;
+    margin-top: 0px;
+}
+
+.profilePsychologistRow .profilePsychologistContainer .profilePsychologistItem .profilePsychologistItemAge {
+    width: 80px;
+    padding: 11px;
+    font-family: Quicksand;
+    font-size: 16px;
+    font-weight: bold;
+    text-align: center;
+    margin: 0px;
+    border-radius: 8px;
+    margin-top: 10px;
+    background-color: #005889;
+    color: white;
+}
+
+
+/* Profile Schedule */
+
+.profilePsychologistScheduleRow .profilePsychologistItemRowContainer {
+    display: flex;
+    justify-content: center;
+    flex-flow: wrap;
+}
+
+.profilePsychologistScheduleRow .profilePsychologistItemWarning {
+    color: #005889;
+    font-size: 13px;
+    font-weight: bold;
+}
+
+.profilePsychologistScheduleRow .profilePsychologistItemSchedule {
+    color: #005889;
+    font-size: 22px;
+    font-weight: bold;
+    margin-top: 10px;
+    margin-bottom: 10px;
+}
+
+.profilePsychologistScheduleRow .profilePsychologistItemRowContainer .profilePsychologistItemRow {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-left: 30px;
+    margin-right: 30px;
+    margin-top: 20px;
+    margin-bottom: 30px;
+    width: 200px;
+    height: 170px;
+    border-radius: 8px;
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+}
+
+.profilePsychologistScheduleRow .profilePsychologistItemRowContainer .profilePsychologistItemRow .profilePsychologistItemTitle {
+    color: #005889;
+    font-size: 20px;
+    font-weight: bold;
+    margin-bottom: 0px;
+}
+
+.profilePsychologistScheduleRow .profilePsychologistItemRowContainer .profilePsychologistItemRow .profilePsychologistItemContent {
+    color: #005889;
+    font-size: 15px;
+    margin-top: 0px;
+    padding-top: 0px;
+}
+
+
+/* adminPage */
+
+.adminCheckOrderHeader {
+    font-size: 22px;
+    margin-top: 10px;
+    color: #005889;
+    font-weight: bold;
+    text-align: center;
+    margin-top: 30px;
+    margin-bottom: 30px;
+}
+
+.adminCheckOrderRow {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.adminCheckOrderRow .adminCheckOrderContainer {
+    display: flex;
+    justify-content: center;
+    flex-flow: wrap;
+}
+
+.adminCheckOrderRow .adminCheckOrderContainer .adminCheckOrderItemInformation {
+    display: flex;
+    flex-direction: column;
+    padding: 30px;
+    margin: 20px;
+    width: 650px;
+    height: 120px;
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+    border-radius: 20px;
+}
+
+.adminCheckOrderRow .adminCheckOrderContainer .adminCheckOrderItemInformation .adminCheckOrderItemUsername {
+    font-size: 22px;
+    margin-top: 10px;
+    color: #005889;
+    font-weight: bold;
+}
+
+.adminCheckOrderRow .adminCheckOrderContainer .adminCheckOrderItemInformation .adminCheckOrderItemPyschologistName,
+.adminCheckOrderRow .adminCheckOrderContainer .adminCheckOrderItemInformation .adminCheckOrderItemDate {
+    font-size: 15px;
+    color: #005889;
+    margin-top: 0px;
+}
+
+.adminCheckOrderRow .adminCheckOrderContainer .adminCheckOrderItemAccept,
+.adminCheckOrderRow .adminCheckOrderContainer .adminCheckOrderItemReject {
+    display: flex;
+    flex-direction: column;
+    padding-top: 20px;
+    margin: 20px;
+    align-items: center;
+}
+
+.adminCheckOrderRow .adminCheckOrderContainer .adminCheckOrderItemAccept .adminCheckOrderItemAcceptVector {
+    width: 50px;
+    height: 50px;
+    padding: 30px;
+    background-color: #D8FFF3;
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+    border-radius: 20px;
+    cursor: pointer;
+}
+
+.adminCheckOrderRow .adminCheckOrderContainer .adminCheckOrderItemAccept .adminCheckOrderItemAcceptContent {
+    color: #39C99E;
+    font-weight: bold;
+    font-size: 20px;
+}
+
+.adminCheckOrderRow .adminCheckOrderContainer .adminCheckOrderItemReject .adminCheckOrderItemRejectVector {
+    width: 50px;
+    height: 50px;
+    padding: 30px;
+    background-color: #FFD4D4;
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+    border-radius: 20px;
+    cursor: pointer;
+}
+
+.adminCheckOrderRow .adminCheckOrderContainer .adminCheckOrderItemReject .adminCheckOrderItemRejectContent {
+    color: #FF0000;
+    font-weight: bold;
+    font-size: 20px;
+}
+
+
+/* alert */
+
+.backgroundBodyAlert {
+    background-color: #D9F1FF;
+}
+
+.alertPassChangeSuccessRow,
+.alertFullScheduleRow,
+.askToCheckEmailRow,
+.alertOrderPendingRow {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.alertPassChangeSuccessRow .alertPassChangeSuccessContainer,
+.alertFullScheduleRow .alertPassFullScheduleContainer,
+.askToCheckEmailRow .askToCheckEmailContainer,
+.alertOrderPendingRow .alertPassOrderPendingContainer {
+    display: flex;
+    justify-content: center;
+    flex-flow: wrap;
+}
+
+.alertPassChangeSuccessRow .alertPassChangeSuccessContainer .alertPassChangeSuccessItem,
+.alertFullScheduleRow .alertPassFullScheduleContainer .alertPassFullScheduleItem,
+.askToCheckEmailRow .askToCheckEmailContainer .askToCheckEmailItem,
+.alertOrderPendingRow .alertPassOrderPendingContainer .alertPassOrderPendingItem {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 30px;
+    margin: 20px;
+    margin-top: 100px;
+    width: 450px;
+    height: 250px;
+    background-color: white;
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+    border-radius: 20px;
+}
+
+.alertPassChangeSuccessRow .alertPassChangeSuccessContainer .alertPassChangeSuccessItem .alertPassChangeSuccessItemHeader,
+.alertFullScheduleRow .alertPassFullScheduleContainer .alertPassFullScheduleItem .alertPassFullScheduleItemHeader,
+.askToCheckEmailRow .askToCheckEmailContainer .askToCheckEmailItem .askToCheckEmailItemHeader,
+.alertOrderPendingRow .alertPassOrderPendingContainer .alertPassOrderPendingItem .alertPassOrderPendingItemHeader {
+    color: #727272;
+    font-size: 40px;
+    font-weight: bold;
+    margin-top: 30px;
+    margin-bottom: 20px;
+}
+
+.alertPassChangeSuccessRow .alertPassChangeSuccessContainer .alertPassChangeSuccessItem .alertPassChangeSuccessContent,
+.alertFullScheduleRow .alertPassFullScheduleContainer .alertPassFullScheduleItem .alertPassFullScheduleContent,
+.askToCheckEmailRow .askToCheckEmailContainer .askToCheckEmailItem .askToCheckEmailContent {
+    width: 285px;
+    margin-top: 0px;
+    text-align: center;
+    font-size: 20px;
+    color: #727272;
+}
+
+.alertOrderPendingRow .alertPassOrderPendingContainer .alertPassOrderPendingItem .alertPassOrderPendingContent {
+    width: 370px;
+    margin-top: 0px;
+    text-align: center;
+    font-size: 20px;
+    color: #727272;
+}
+
+.alertPassChangeSuccessRow .alertPassChangeSuccessContainer .alertPassChangeSuccessItem .btnOkay,
+.alertFullScheduleRow .alertPassFullScheduleContainer .alertPassFullScheduleItem .btnOkay,
+.askToCheckEmailRow .askToCheckEmailContainer .askToCheckEmailItem .btnOkay,
+.alertOrderPendingRow .alertPassOrderPendingContainer .alertPassOrderPendingItem .btnOkay {
+    width: 215px;
+    height: 50px;
+    padding: 12px 24px;
+    border-radius: 8px;
+    color: #F8F8F8;
+    font-weight: bold;
+    background-color: #007FC7;
+    font-size: 16px;
+    cursor: pointer;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 10px;
+    transition: all 0.3s ease 0s;
+}
+
+.alertPassChangeSuccessRow .alertPassChangeSuccessContainer .alertPassChangeSuccessItem .btnOkay:hover,
+.alertFullScheduleRow .alertPassFullScheduleContainer .alertPassFullScheduleItem .btnOkay:hover,
+.askToCheckEmailRow .askToCheckEmailContainer .askToCheckEmailItem .btnOkay:hover,
+.alertOrderPendingRow .alertPassOrderPendingContainer .alertPassOrderPendingItem .btnOkay:hover {
+    color: #D9F1FF;
+}
+
+.alertPassChangeSuccessContentHighlight {
+    color: #007FC7;
+    font-weight: bold;
+}
