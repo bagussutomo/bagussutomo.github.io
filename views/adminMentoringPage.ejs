@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Baperin</title>
+    <link rel="stylesheet" href="/style/style.css" />
+</head>
+
+<body>
+    <%- include('baperinNavbarAdmin'); %>
+        <h3 class="adminCheckOrderHeader">Mentoring</h3>
+        <div class="adminCheckOrderRow">
+            <% jadwalMentoring.forEach((mentoring) => { %>
+                <div class="adminCheckOrderContainer">
+                    <div class="adminCheckOrderItemInformation">
+                        <p class="adminCheckOrderItemUsername">
+                            <%= mentoring.username %>
+                        </p>
+                        <p class="adminCheckOrderItemPyschologistName">
+                            <%= mentoring.nama_psikolog %>
+                        </p>
+                        <p class="adminCheckOrderItemDate">
+                            <%= mentoring.tanggal %>
+                        </p>
+                    </div>
+                    <div class="adminCheckOrderItemAccept">
+                        <img class="adminCheckOrderItemAcceptVector" src="image/baperin_accept_icon.png" />
+                        <p class="adminCheckOrderItemAcceptContent">Terima</p>
+                    </div>
+                    <div class="adminCheckOrderItemReject">
+                        <img class="adminCheckOrderItemRejectVector" src="image/baperin_reject_icong.png" />
+                        <p class="adminCheckOrderItemRejectContent">Tolak</p>
+                    </div>
+                </div>
+        </div>
+        <%- include('footerScroll'); %>
+</body>
+
+</html>

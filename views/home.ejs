@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html>
+
+
+<head>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Baperin</title>
+    <link rel="stylesheet" href="/style/style.css" />
+</head>
+
+
+<body>
+    <%- include('baperinNavbar'); %>
+        <div class="baperinHomeFirstRow">
+            <img class="baperinHomeVector" src="image/BaperanVector.png" />
+            <p class="firstRowItem">Tugas menumpuk, badan pun ambruk. Meskipun demikian, jangan biarkan mentalmu
+                <font class="baperinHomeHighlight">Terpuruk!</font>
+            </p>
+            <p class="secondRowItem">Gabung bersama kami untuk belajar menjaga kesehatan mental bersama mentor dan konselor dari Baperin.</p>
+            <input type="submit" value="Daftar Sekarang" name="Signin" class="btnSignin" onclick="window.location.href='/register';" />
+        </div>
+        <div class="baperinHomeSecondRow">
+            <p class="firstRowItem">Layanan Kami</p>
+            <div class="featureItemContainer">
+                <div class="featureItem">
+                    <img class="featureItemVector" src="image/Konseling Vector.jpg" />
+                    <p class="featureItemHead">Konseling</p>
+                    <div class="featureItemInformation">
+                        <li>Ditunjukan untuk pengguna masalah Klinis</li>
+                        <li>Diberikan Asesmen yang lebih mendalam dan terapi tertentu</li>
+                    </div>
+                    <input type="submit" value="Lihat Selengkapnya" name="counselingViewMore" class="btnViewMore" onclick="window.location.href='/konseling';" />
+                </div>
+                <div class="featureItem">
+                    <img class="featureItemVector" src="image/Mentoring Vector.jpg" />
+                    <p class="featureItemHead">Mentoring</p>
+                    <div class="featureItemInformation">
+                        <li>Mengurusi masalah NON-KLINIS</li>
+                        <li>Memberikan arahan teknis dan direktif, seperti refleksi diri</li>
+                    </div>
+                    <input type="submit" value="Lihat Selengkapnya" name="mentoringViewMore" class="btnViewMore" onclick="window.location.href='/Mentoring';" />
+                </div>
+            </div>
+        </div>
+        <%- include('footerScroll'); %>
+</body>
+
+</html>

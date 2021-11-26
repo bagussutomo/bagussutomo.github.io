@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Baperin</title>
+    <link rel="stylesheet" href="/style/style.css" />
+</head>
+
+<body>
+    <%- include('baperinNavbar'); %>
+        <div class="baperinCounselingFirstRow">
+            <img class="baperinCounselingVector" src="image/konsul.png" />
+            <p class="counselingFirstRowItem">Konsultasikan masalahmu langsung dengan mentor profesional dari
+                <font class="baperinCounselingHightLight">Baperin</font>
+            </p>
+            <input type="submit" value="Pesan Sekarang" class="btnOrderNow" />
+        </div>
+        <div class="baperinCounselingSecondRow">
+            <div class="counselingProofContainer">
+                <div class="counselingProofItem">
+                    <img class="counselingProofItemVector" src="image/konsulinfo.png" />
+                </div>
+                <div class="counselingProofItem">
+                    <h3 class="counselingProofItemHead">Kamu masih belum yakin?</h3>
+                    <div class="counselingProofItemList">
+                        <li>Dengan mengikuti konseling Kamu bisa cerita sama Konselor terlatih.</li>
+                        <li>Memberikan asesmen dan terapi dari masalah yang sedang dihadapi.</li>
+                        <li>Mencari solusi lewat worksheet yang dibuatkan sesuai dengan masalahmu.</li>
+                        <li>Lebih mengenal diri sendiri melalui berbagai psikotes oleh konselor.</li>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="baperinCounselingThirdRow">
+            <p class="counselingFirstRowItem">Pilih Konselor</p>
+            <div class="featureCounselingItemContainer">
+                <div class="featureItem">
+                    <img class="featureItemVector" src="image/Valentino.png" />
+                    <p class="featureItemHead">Valentino Subagjo</p>
+                    <p class="featureItemTimeInformation">100 menit</p>
+                    <p class="featureItemInformation">Saya sudah menjadi psikolog berpengalaman sejak tahun 2001, selama ini saya sudah menyelesaikan banyak masalah terkait produktivitas, depresi, dan sebagainya</p>
+                    <input type="submit" value="Ajukan Jadwal" name="counselingApplySchedule" class="btnApplySchedule" onclick="window.location.href='/pesan-jadwal/1';" />
+                </div>
+                <div class="featureItem">
+                    <img class="featureItemVector" src="image/Brad.png" />
+                    <p class="featureItemHead">Brad Blunder Roam</p>
+                    <p class="featureItemTimeInformation">100 menit</p>
+                    <p class="featureItemInformation">Saya merupakan salah satu Dosen dan Psikolog pendidikan yang berpengalaman dalam bidang kesehatan mental.</p>
+                    <input type="submit" value="Ajukan Jadwal" name="counselingApplySchedule" class="btnApplySchedule" onclick="window.location.href='/pesan-jadwal/2';" />
+                </div>
+                <div class="featureItem">
+                    <img class="featureItemVector" src="image/Van.png" />
+                    <p class="featureItemHead">Ucup Van Hellsing</p>
+                    <p class="featureItemTimeInformation">100 menit</p>
+                    <p class="featureItemInformation">Saya adalah salah satu psikolog terbaik di tingkat Perguruan Tinggi, jika kalian ingin curhat atau punya masalah bisa langsung daftar mentoring bersama saya. see you.</p>
+                    <input type="submit" value="Ajukan Jadwal" name="counselingApplySchedule" class="btnApplySchedule" onclick="window.location.href='/pesan-jadwal/3';" />
+                </div>
+            </div>
+        </div>
+        <%- include('footerScroll'); %>
+</body>
+
+</html>

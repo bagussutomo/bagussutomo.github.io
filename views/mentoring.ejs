@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Baperin</title>
+    <link rel="stylesheet" href="/style/style.css" />
+</head>
+
+<body>
+    <%- include('baperinNavbar'); %>
+        <div class="baperinMentoringFirstRow">
+            <div class="mentoringProofContainer">
+                <div class="mentoringProofItem">
+                    <img class="mentoringProofItemVector" src="image/Mentoring.jpg" />
+                </div>
+                <div class="mentoringProofItem">
+                    <h3 class="mentoringProofItemHead">Mentoring tuh ngapain aja sih?</h3>
+                    <div class="mentoringProofItemList">
+                        <li>Kamu bisa cerita sama Mentor terlatih.</li>
+                        <li>Bareng-bareng cari solusi dari masalah yang sedang dihadapi.</li>
+                        <li>Mencari solusi lewat worksheet yang dibuatkan sesuai dengan masalahmu.</li>
+                        <li>Lebih mengenal diri sendiri melalui berbagai psikotes.</li>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="baperinMentoringSecondRow">
+            <div class="mentoringFlowContainer">
+                <div class="mentoringFlowItem">
+                    <h3 class="mentoringFlowItemHead">Alur Mentoring</h3>
+                    <div class="mentoringFlowItemList">
+                        <li>Daftar Mentoring</li>
+                        <li>Pilih Mentor</li>
+                        <li>Pilih Jadwal Mentoring</li>
+                        <li>Mulai Mentoring!</li>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="baperinMentoringThirdRow">
+            <p class="mentoringFirstRowItem">Pilih Konselor</p>
+            <div class="featureMentoringItemContainer">
+                <div class="featureItem">
+                    <img class="featureItemVector" src="image/Valentino.png" />
+                    <p class="featureItemHead">Valentino Subagjo</p>
+                    <p class="featureItemTimeInformation">100 menit</p>
+                    <p class="featureItemInformation">Saya sudah menjadi psikolog berpengalaman sejak tahun 2001, selama ini saya sudah menyelesaikan banyak masalah terkait produktivitas, depresi, dan sebagainya</p>
+                    <input type="submit" value="Ajukan Jadwal" name="mentoringApplySchedule" class="btnApplySchedule" onclick="window.location.href='/pesan-jadwal/4';" />
+                </div>
+                <div class="featureItem">
+                    <img class="featureItemVector" src="image/Brad.png" />
+                    <p class="featureItemHead">Brad Blunder Roam</p>
+                    <p class="featureItemTimeInformation">100 menit</p>
+                    <p class="featureItemInformation">Saya merupakan salah satu Dosen dan Psikolog pendidikan yang berpengalaman dalam bidang kesehatan mental.</p>
+                    <input type="submit" value="Ajukan Jadwal" name="mentoringApplySchedule" class="btnApplySchedule" onclick="window.location.href='/pesan-jadwal/5';" />
+                </div>
+                <div class="featureItem">
+                    <img class="featureItemVector" src="image/Van.png" />
+                    <p class="featureItemHead">Ucup Van Hellsing</p>
+                    <p class="featureItemTimeInformation">100 menit</p>
+                    <p class="featureItemInformation">Saya adalah salah satu psikolog terbaik di tingkat Perguruan Tinggi, jika kalian ingin curhat atau punya masalah bisa langsung daftar mentoring bersama saya. See you.</p>
+                    <input type="submit" value="Ajukan Jadwal" name="mentoringApplySchedule" class="btnApplySchedule" onclick="window.location.href='/pesan-jadwal/6';" />
+                </div>
+            </div>
+        </div>
+        <%- include('footerScroll'); %>
+</body>
+
+</html>

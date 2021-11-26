@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Baperin</title>
+    <link rel="stylesheet" href="/style/style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.13.0/css/all.min.css">
+</head>
+
+<body>
+    <div class="loginContainer">
+        <header class="headLogin">
+            <h1>Halo! Selamat Datang di
+                <font class="headHighlight">Baperin</font>
+            </h1>
+        </header>
+        <form class="login" method="post" action="/login">
+            <div class="form-group">
+                <input type="email" id="input-email" name="email" required placeholder="Masukan Email" autocomplete="off">
+            </div>
+            <div class="form-password">
+                <input type="password" class="inputPassword" name="password" required placeholder="Masukan Kata Sandi">
+                <i class="material-icons visibilityPassword">visibility_off</i>
+            </div>
+            <a class="forgotPasswordLink" href="/forgot-password"> Lupa kata sandi?</a>
+            <p class="errorStyle">
+                <%= errors %>
+            </p>
+            <input type="submit" name="commit" value="Masuk" name="submit" class="btnMasuk">
+        </form>
+        <div class="login-help">
+            <p>Belum punya akun? <a class="registerLink" href="/register">Daftar yuk!</a>.</p>
+        </div>
+    </div>
+    <%- include('footer'); %>
+        <script src="script/toggleEye.js"></script>
+</body>
+
+</html>

@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html>
+    <h1>admin page</h1>
+    <button onclick="window.location.href='/logout';">balik</button>
+    <br>
+    <div>
+        <h1>jadwal konseling</h1>
+        <ul>
+            <% jadwalKonseling.forEach((konseling) => { %> 
+                <li>
+                    <p><%= konseling.tanggal %>  </p>
+                    <p><%= konseling.username %> </p>
+                    <p><%= konseling.nama_psikolog %> </p>
+                    <% var username = konseling.username; %> 
+                    <form action="/accept/<%= username %>/1">
+                        <input type="submit" name="accept" id="accept" value="Terima">
+                    </form>
+                    <form action="/reject/<%= username %>/1">
+                        <input type="submit" name="reject" id="reject" value="Tolak">
+                    </form>
+                </li>
+            <% }); %>
+        </ul>
+    </div>
+    <br>
+    <div>
+        <h1>jadwal mentoring</h1>
+        <ul>
+            <% jadwalMentoring.forEach((mentoring) => { %> 
+                <li>
+                    <p><%= mentoring.tanggal %>  </p>
+                    <p><%= mentoring.username %> </p>
+                    <p><%= mentoring.nama_psikolog %> </p>
+                    <% var username = mentoring.username; %> 
+                    <form action="/accept/<%= username %>/2">
+                        <input type="submit" name="accept" id="accept" value="Terima">
+                    </form>
+                    <form action="/reject/<%= username; %>/2">
+                        <input type="submit" name="reject" id="reject" value="Tolak">
+                    </form>
+                </li>
+            <% }); %>
+        </ul>
+    </div>
+</html>

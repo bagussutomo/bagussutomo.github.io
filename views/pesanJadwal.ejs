@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Baperin</title>
+    <link rel="stylesheet" href="/style/style.css" />
+</head>
+
+<body class="bodyChooseSchedule">
+    <div class="chooseScheduleContainer" action="/pilihJadwal">
+        <header class="headChooseSchedule">
+            <h1>Pilih jadwal mentoring/konseling mu di sini!</h1>
+        </header>
+        <form class="chooseSchedule" method="post">
+            <div class="form-group">
+                <input type="Email" id="input-email" name="email" required placeholder="Masukan Email" autocomplete="off">
+            </div>
+            <div class="form-group">
+                <select name="jam" class="itemSelectedChooseSchedule" required>
+                    <option value="none" selected disabled hidden>Pilih Jam</option>
+                    <option value="10.00-11.40">10.00-11.40</option>
+                    <option value="13.00-14.40">13.00-14.40</option>
+                    <option value="15.00-16.40">15.00-16.40</option>
+                </select>
+
+            </div>
+            <div class="form-group">
+                <select name="hari" class="itemSelectedChooseSchedule" required>
+                    <option value="none" selected disabled hidden>Pilih Hari/Tanggal</option>
+                    <option value="1">+1 Hari</option>
+                    <option value="3">+3 Hari</option>
+                    <option value="5">+5 Hari</option>
+                </select>
+            </div>
+            <p class="errorStyle">
+                <%= errors %>
+            </p>
+            <input type="submit" name="commit" value="Ajukan jadwalmu!" name="Ajukan" class="btnApply">
+        </form>
+        <a class="backToHome" href="/"> Kembali</a>
+    </div>
+    <%- include('footer'); %>
+</body>
+
+</html>

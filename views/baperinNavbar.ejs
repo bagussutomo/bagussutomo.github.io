@@ -1,0 +1,27 @@
+<header class="baperinNavbar">
+    <img src="image/logo.png" alt="logo" class="baperinLogo">
+    <nav class="baperinNavigation">
+        <ul class="baperinNavLinks">
+            <li><a href="/">Home</a></li>
+            <div class="baperinDropdown">
+                <a class="baperinDropdownButton" href="/profile-mentor-konselor">Profile Psikolog</a>
+            </div>
+            <div class="baperinDropdown">
+                <a class="baperinDropdownButton" href="#">Layanan</a>
+                <div class="baperinDropdownContent">
+                    <a href="/konseling">Konseling</a>
+                    <a href="/mentoring">Mentoring</a>
+                </div>
+            </div>
+        </ul>
+    </nav>
+    <% if (locals.isLoggedIn) { 
+        %>
+        <button class="btnLogin " onclick="window.location.href='/logout' ; ">Logout</button>
+        <% 
+        } else {
+            %>
+            <button class="btnLogin " onclick="window.location.href='/login' ; ">Masuk</button>
+            <% 
+        } %>
+</header>
